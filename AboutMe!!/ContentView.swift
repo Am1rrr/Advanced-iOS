@@ -9,16 +9,182 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+//            Text("Khamrayev Amirshakh")
+//                .font(.largeTitle )
+//            Image("myPhoto")
+//            .resizable()
+//            .scaledToFit()
+//            .frame(width: 200, height: 200)
+//            List{
+//                HStack{
+//                    Text("Age")
+//                    Spacer()
+//                    Text("20")
+//                }
+//                HStack{
+//                    Text("Location")
+//                    Spacer()
+//                    Text("Almaty")
+//                }
+//                HStack{
+//                    Text("Occupation")
+//                    Spacer()
+//                    Text("Student")
+//                }
+//                Section("Favourites"){
+//                    HStack{
+//                        Text("Food")
+//                        Spacer()
+//                        Text("Steak 🥩 ")
+//                    }
+//                    HStack{
+//                        Text("Colour")
+//                        Spacer()
+//                        Text("Blue")
+//                            .bold()
+//                            .foregroundColor(.blue)
+//                    }
+//                    HStack{
+//                        Text("Animal")
+//                        Spacer()
+//                        Text("Dog 🐶")
+//                    }
+//                }
+//                Section("Interests"){
+//                    Text("Gym 🏋🏿")
+//                    Text("Films")
+//                    Text("Books")
+//                }
+//            }
+            TabView {
+                HomeView()
+                    .tabItem {
+                        Label("Home", systemImage: "person")
+                    }
+            }
+                StoryView()
+                    .tabItem {
+                        Label("Story", systemImage: "book")
+                    }
+                    
+                FavoritesView()
+                    .tabItem {
+                        Label("Favorites", systemImage: "star")
+                    }
+        
     }
 }
 
-#Preview {
-    ContentView()
+
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }
+
+struct HomeView: View {
+    
+    var body: some View {
+        VStack {
+            Text("All About")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .padding()
+
+
+            Image("myPhoto")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .cornerRadius(10)
+                .padding(40)
+
+
+            Text("Khamrayev Amirshakh")
+                .font(.title)
+        }
+    }
+}
+
+//struct HomeView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HomeView()
+//    }
+//}
+
+struct StoryView: View {
+    var body: some View {
+        VStack {
+            Text("My Story")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .padding()
+            
+            ScrollView {
+                Text("I was born in Almaty. My goal is to become greate IOS developer!! 🧑🏼‍💻")
+                    .font(.body)
+                    .padding()
+            }
+        }
+        .padding([.top, .bottom], 50)
+    }
+}
+
+
+//struct StoryView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        StoryView()
+//    }
+//}
+
+struct FavoritesView: View {
+    var body: some View {
+        VStack {
+            Text("Favorites")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .padding(.bottom, 40)
+            Section("Hobbies"){
+                Text("Gym 🏋🏿")
+                Text("Books")
+                Text("Movies")
+            }
+            
+
+
+            Text("Foods")
+                .font(.title2)
+            
+            HStack{
+                Text("Food")
+                Spacer()
+                Text("Steak 🥩 ")
+            }
+            
+
+
+
+            Text("Favorite Colors")
+                .font(.title2)
+            
+            HStack{
+                Text("Colour")
+                Spacer()
+                Text("Blue")
+                    .bold()
+                    .foregroundStyle(.blue)
+            }
+
+
+
+        }
+    }
+}
+
+
+//struct FavoritesView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        FavoritesView()
+//    }
+//}
+

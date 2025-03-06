@@ -16,6 +16,7 @@
 		2970C1A92D76E6C30011CBA9 /* HeroRandomaizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2970C1A82D76E6C30011CBA9 /* HeroRandomaizerTests.swift */; };
 		2970C1B32D76E6C30011CBA9 /* HeroRandomaizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2970C1B22D76E6C30011CBA9 /* HeroRandomaizerUITests.swift */; };
 		2970C1B52D76E6C30011CBA9 /* HeroRandomaizerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2970C1B42D76E6C30011CBA9 /* HeroRandomaizerUITestsLaunchTests.swift */; };
+		29AF01092D7A3A4E0047AFFE /* SuperheroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AF01082D7A3A4E0047AFFE /* SuperheroView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		2970C1AE2D76E6C30011CBA9 /* HeroRandomaizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeroRandomaizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2970C1B22D76E6C30011CBA9 /* HeroRandomaizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRandomaizerUITests.swift; sourceTree = "<group>"; };
 		2970C1B42D76E6C30011CBA9 /* HeroRandomaizerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRandomaizerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		29AF01082D7A3A4E0047AFFE /* SuperheroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				2970C19A2D76E6C30011CBA9 /* Assets.xcassets */,
 				2970C19C2D76E6C30011CBA9 /* LaunchScreen.storyboard */,
 				2970C19F2D76E6C30011CBA9 /* Info.plist */,
+				29AF01082D7A3A4E0047AFFE /* SuperheroView.swift */,
 			);
 			path = HeroRandomaizer;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			files = (
 				2970C1962D76E6C10011CBA9 /* ViewController.swift in Sources */,
 				2970C1922D76E6C10011CBA9 /* AppDelegate.swift in Sources */,
+				29AF01092D7A3A4E0047AFFE /* SuperheroView.swift in Sources */,
 				2970C1942D76E6C10011CBA9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -5,13 +5,26 @@
 //  Created by amir on 21.02.2025.
 //
 
+//import SwiftUI
+//
+//@main
+//struct Lab2App: App {
+//    var body: some Scene {
+//        WindowGroup {
+//            ContentView()
+//        }
+//    }
+//}
+
 import SwiftUI
 
 @main
-struct Lab2App: App {
+struct MyApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
     }
 }
+
+

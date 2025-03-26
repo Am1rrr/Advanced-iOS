@@ -56,22 +56,22 @@ struct ContentView: View {
 //                    Text("Books")
 //                }
 //            }
-            TabView {
-                HomeView()
-                    .tabItem {
-                        Label("Home", systemImage: "person")
-                    }
-            }
-                StoryView()
-                    .tabItem {
-                        Label("Story", systemImage: "book")
-                    }
-                    
-                FavoritesView()
-                    .tabItem {
-                        Label("Favorites", systemImage: "star")
-                    }
-        
+        TabView {
+            HomeView()
+                .tabItem {
+                    Label("Home", systemImage: "person")
+                }
+            
+            StoryView()
+                .tabItem {
+                    Label("Story", systemImage: "book")
+                }
+            
+            FavoritesView()
+                .tabItem {
+                    Label("Favorites", systemImage: "star")
+                }
+        }
     }
 }
 
@@ -139,47 +139,35 @@ struct StoryView: View {
 
 struct FavoritesView: View {
     var body: some View {
-        VStack {
-            Text("Favorites")
-                .font(.largeTitle)
-                .fontWeight(.bold)
-                .padding(.bottom, 40)
-            Section("Hobbies"){
+        List {
+            Section("Hobbies") {
                 Text("Gym 🏋🏿")
                 Text("Books")
                 Text("Movies")
             }
             
-
-
-            Text("Foods")
-                .font(.title2)
-            
-            HStack{
-                Text("Food")
-                Spacer()
-                Text("Steak 🥩 ")
-            }
-            
-
-
-
-            Text("Favorite Colors")
-                .font(.title2)
-            
-            HStack{
-                Text("Colour")
-                Spacer()
-                Text("Blue")
-                    .bold()
-                    .foregroundStyle(.blue)
+            Section("Foods") {
+                HStack {
+                    Text("Food")
+                    Spacer()
+                    Text("Steak 🥩 ")
+                }
             }
 
-
-
+            Section("Favorite Colors") {
+                HStack {
+                    Text("Colour")
+                    Spacer()
+                    Text("Blue")
+                        .bold()
+                        .foregroundStyle(.blue)
+                }
+            }
         }
+        .navigationTitle("Favorites")
     }
 }
+
 
 
 struct FavoritesView_Previews: PreviewProvider {

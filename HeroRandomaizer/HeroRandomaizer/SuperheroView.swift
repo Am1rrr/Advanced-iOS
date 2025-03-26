@@ -27,7 +27,7 @@ struct Powerstats: Codable {
 }
 
 struct Appearance: Codable {
-    let gender, race, height, weight: String
+    let gender, race: String
 }
 
 struct SuperheroImages: Codable {
@@ -100,7 +100,10 @@ struct SuperheroView: View {
             do {
                 let url = URL(string: apiURL)!
                 let (data, _) = try await URLSession.shared.data(from: url)
+                
                 let heroes = try JSONDecoder().decode([Superhero].self, from: data)
+                
+                print("DEBUG: ", heroes)
                 
                 DispatchQueue.main.async {
                     superhero = heroes.randomElement()

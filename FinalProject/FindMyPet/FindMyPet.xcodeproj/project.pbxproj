@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2959F5D82DD2685B00938C10 /* Documentation.md in Resources */ = {isa = PBXBuildFile; fileRef = 2959F5D72DD2684F00938C10 /* Documentation.md */; };
 		296618772DCD720B001FEC06 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 296618762DCD720A001FEC06 /* GoogleService-Info.plist */; };
 		2985D5612DCCB6790059B23C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 2985D5602DCCB6790059B23C /* FirebaseAnalytics */; };
 		2985D5632DCCB6790059B23C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2985D5622DCCB6790059B23C /* FirebaseAuth */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2959F5D72DD2684F00938C10 /* Documentation.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Documentation.md; sourceTree = "<group>"; };
 		296618762DCD720A001FEC06 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2985D5112DCB831D0059B23C /* FindMyPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindMyPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2985D5212DCB831F0059B23C /* FindMyPetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindMyPetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +90,7 @@
 		2985D5082DCB831D0059B23C = {
 			isa = PBXGroup;
 			children = (
+				2959F5D72DD2684F00938C10 /* Documentation.md */,
 				2985D5132DCB831D0059B23C /* FindMyPet */,
 				2985D5242DCB831F0059B23C /* FindMyPetTests */,
 				2985D52E2DCB831F0059B23C /* FindMyPetUITests */,
@@ -233,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2959F5D82DD2685B00938C10 /* Documentation.md in Resources */,
 				296618772DCD720B001FEC06 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

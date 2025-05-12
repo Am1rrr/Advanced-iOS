@@ -6,8 +6,10 @@
 //
 
 import Foundation
+import UIKit
 
-struct ImageModel: Identifiable, Codable {
-    let id: UUID = UUID()
-    let url: String
+
+struct ImageModel: Identifiable {
+    var id = UUID()
+    let image: UIImage
 }

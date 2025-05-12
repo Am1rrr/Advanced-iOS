@@ -14,7 +14,7 @@ struct ContentView: View {
         NavigationView {
             ScrollView {
                 VStack(spacing: 16) {
-                    ForEach(["Current Conditions", "5-Day Forecast"], id: \ .self) { title in
+                    ForEach(["Current Conditions", "5-Day Forecast", "Air Quality", "Weather Alerts"], id: \ .self) { title in
                         WeatherComponentView(title: title,
                                               state: viewModel.loadingStates[title] ?? .idle,
                                               data: viewModel.weatherData.first(where: { $0.title == title }))
